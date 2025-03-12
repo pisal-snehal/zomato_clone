@@ -1,0 +1,272 @@
+*{
+    font-family: 'Okra', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255,251,247);
+    margin-bottom: -32px;
+}
+
+.hero-section{
+    background-image: url('./images/zomato_background.avif');
+    height: 416px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: 108%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+    font-size: 15px;
+    padding-right: 165px;
+    padding-left: 150px;
+    background: transparent;
+    font-weight: lighter;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu-container{
+    display: flex;
+    gap: 34px;
+    font-size: 18px;
+    font-weight: 300;
+    
+}
+
+.hero-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-section-logo{
+    height: 60px;
+    width: 300px;
+    object-fit: contain;
+    opacity: 1;
+    margin-top: 1.6rem;
+}
+
+.hero-section-heading{
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.next-line{
+    font-size: 50px;
+    line-height: 48px;
+}
+
+.hero-section-location{
+    display: flex;
+    align-items: center;
+    background: rgb(255,255,255);
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+    width: 55%;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 8px;
+    margin-top: 27px;
+}
+
+#location-icon{
+    color: rgb(236, 91, 105);
+    font-size: 20px;
+}
+
+.location-input{
+    border: none;
+    margin-right: 10px;
+    appearance: none;
+    font-size: 0.9rem;
+    width: 120px;
+    outline: none;
+}
+
+#down-triangle{
+    opacity: 0.6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero-section-location span{
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+#search-icon{
+    opacity: 0.6;
+    font-size: 17px;
+    margin-left: 2px;
+}
+
+.search-input{
+    appearance: none;
+    border: none;
+    width: 60%;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.main-section {
+    position: relative;
+    max-width: 100%;
+    height: 80%;
+    width: 100%;
+    margin-top: 2.5rem;
+    justify-items: center;
+}
+
+
+.cards-container{
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+    margin-bottom: 6rem;
+}    
+
+.card {
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 1.2rem 1.2rem;
+}
+
+
+.card-img{
+    height: 155px;
+    width: 544px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    
+}
+
+.card-info{
+    padding: 15px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 0px 0px 1.2rem 1.2rem;
+    box-sizing: border-box;
+    border-top: none;
+}
+
+.card-info h1{
+    text-align: left;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.card-para{
+    color: rgb(79, 79, 79);
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2rem;
+}
+
+.collections{
+    margin-bottom: 10rem;
+}
+
+.collection-title{
+    font-weight: 547;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0px;
+    margin-block-end: 0.2em;
+}
+
+.collection-info{
+    display: flex;
+    margin-top: 0.4rem;
+    gap: 70px;
+}
+
+.collection-para{
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgb(54, 54, 54);
+    margin: 0px;
+}
+
+.collection-info span{
+    color: rgb(224, 53, 70);
+    display: inline-flex;
+    padding: 0.3rem;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    line-height: 1;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.collection-container{
+    display: flex;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.short-card{
+    height: 20rem;
+    max-width: 25%;
+    padding: 0px 6.66667px 10px 0px;
+    top: 0px;
+    left: 0px;
+    border-radius: 0.9rem;
+    
+}
+
+footer{
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.footer-content{
+    padding: 4rem 0px 2rem;
+}
+
+.image-logo{
+    height: 2.6rem;
+    width: 13rem;
+}
+
+.hr{
+    margin-top: 5rem;
+    border-width: 1px 0px 0px;
+    border-top-style: solid;
+    border-top-color: rgb(207, 207, 207);
+}
+
+.footer-para{
+    font-size: 1rem;
+    color: rgb(79, 79, 79);
+    line-height: 1.7rem;
+    margin-top: 2rem;
+}
