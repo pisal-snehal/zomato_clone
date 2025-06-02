@@ -29,7 +29,7 @@ A responsive landing page clone of the popular food delivery and restaurant disc
 
 Here are some screenshots of the Zomato UI Clone:
 
-![Screenshot 1](./images/screenshot/screenshot1.png)
+![Screenshot 1](./images/screenshot/screenshot1.PNG)
 ![Screenshot 2](./images/screenshot/screenshot2.png)
 ![Screenshot 3](./images/screenshot/screenshot3.png)
 ![Screenshot 4](./images/screenshot/screenshot4.png)
