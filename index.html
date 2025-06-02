@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./images/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo.png" />
     <title>Zomato</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <section class="hero-section">
         <header>
@@ -23,16 +27,16 @@
         </header>
 
         <div class="hero-section-container">
-            <img src="./images/zomato_logo.avif" alt="zomato_logo" class="hero-section-logo"/>
+            <img src="./images/zomato_logo.avif" alt="zomato_logo" class="hero-section-logo" />
             <h1 class="hero-section-heading">Discover the best food & drinks in <span class="next-line">Pune</span></h1>
-            
+
             <div class="hero-section-location">
                 <i class="fa-solid fa-location-dot" id="location-icon"></i>
-                <input class="location-input" type="text" placeholder="Pune"/>
+                <input class="location-input" type="text" placeholder="Pune" />
                 <i class="fa-solid fa-caret-down" id="down-triangle"></i>
                 <span>|</span>
                 <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                <input class="search-input" type="text" placeholder="Search for restaurant, cuisine or a dish"/>
+                <input class="search-input" type="text" placeholder="Search for restaurant, cuisine or a dish" />
             </div>
         </div>
     </section>
@@ -40,58 +44,90 @@
     <div class="main-section">
         <div class="cards-container">
             <div class="card">
-                <img src="./images/card1.avif" class="card-img"/>
+                <img src="./images/card1.avif" alt="Order Online" class="card-img" />
                 <div class="card-info">
-                    <h1  class="card-title">Order Online</h1>
+                    <h1 class="card-title">Order Online</h1>
                     <p class="card-para">Stay home and order to your doorstep</p>
-                </div>  
-            </div> 
-            
+                </div>
+            </div>
+
             <div class="card">
-                <img src="./images/card2.avif" class="card-img"/>
+                <img src="./images/card2.avif" alt="Dining" class="card-img" />
                 <div class="card-info">
-                    <h1  card="card-title">Dining</h1>
+                    <h1 class="card-title">Dining</h1>
                     <p class="card-para">View the city's favourite dining venues</p>
-                </div>  
-            </div> 
+                </div>
+            </div>
         </div>
-        
+
         <div class="collections">
             <h2 class="collection-title">Collections</h2>
             <div class="collection-info">
-                <h6 class="collection-para">Explore curated lists of top restaurants, cafes, pubs, and bars in Aurangabad, based on trends</h6>
+                <h6 class="collection-para">Explore curated lists of top restaurants, cafes, pubs, and bars in Pune,
+                    based on trends</h6>
                 <span>All collections in Pune
                     <i class="fa-solid fa-caret-right"></i>
                 </span>
             </div>
-            
+
             <div class="collection-container">
-                <img src="./images/card4.webp" id="img-4" class="short-card"/>
-                <img src="./images/card5.png" id="img-5" class="short-card"/>
-                <img src="./images/card6.avif" id="img-6" class="short-card"/>
+                <img src="./images/card4.webp" alt="Popular restaurant collection 1" class="short-card" />
+                <img src="./images/card5.png" alt="Collection image 2" class="short-card" />
+                <img src="./images/card6.avif" alt="Collection image 3" class="short-card" />
             </div>
         </div>
-        
+
 
     </div>
-    
+
     <footer>
         <div class="footer-content">
             <section class="footer-section">
                 <section class="sec-img">
-                    <img src="./images/zomato_footer_logo.png" class="image-logo">
+                    <img src="./images/zomato_footer_logo.png" alt="Zomato Footer Logo" class="image-logo" />
                 </section>
                 <section class="footer-sub-section">
-                    <div class="country"></div>
-                    <div class="blank-div"></div>
-                    <div class="language"></div>
+                    <div class="country">
+                        <label for="country-select">Country:</label>
+                        <select id="country-select" class="footer-select">
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                    <div class="language">
+                        <label for="language-select">Language:</label>
+                        <select id="language-select" class="footer-select">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Marathi</option>
+                        </select>
+                    </div>
                 </section>
             </section>
 
-            <hr class="hr"/>
-            <p class="footer-para">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2025 © Zomato™ Ltd. All rights reserved.</p>
+            <hr class="hr" />
+
+            <p class="footer-para">
+                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content Policies. All trademarks are properties of their respective owners. 2008-2025 © Zomato™ Ltd. All
+                rights reserved.
+            </p>
         </div>
     </footer>
-    
+
+
+
+
+    <script>
+        const searchInput = document.querySelector('.search-input');
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                alert('Search feature is under development!');
+            }
+        });
+    </script>
+
 </body>
+
 </html>

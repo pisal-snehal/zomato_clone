@@ -240,33 +240,139 @@ body{
     
 }
 
-footer{
-    background-color: rgb(248, 248, 248);
-    display: flex;
+/* Footer Styling */
+footer {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.sec-img {
+  flex: 1 1 200px;
+}
+
+.image-logo {
+  height: 2.6rem;
+  width: 13rem;
+  object-fit: contain;
+}
+
+.footer-sub-section {
+  display: flex;
+  gap: 2rem;
+  flex: 1 1 300px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.country,
+.language {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(79, 79, 79);
+}
+
+.country label,
+.language label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: rgb(224, 53, 70); /* Zomato red */
+}
+
+.footer-select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(207, 207, 207);
+  font-size: 0.9rem;
+  color: rgb(54, 54, 54);
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.footer-select:hover,
+.footer-select:focus {
+  border-color: rgb(224, 53, 70);
+}
+
+.hr {
+  margin: 3rem 0 2rem 0;
+  border: none;
+  border-top: 1px solid rgb(207, 207, 207);
+}
+
+.footer-para {
+  font-size: 0.9rem;
+  color: rgb(79, 79, 79);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-sub-section {
     justify-content: center;
-    width: 100%;
-
+  }
 }
 
-.footer-content{
-    padding: 4rem 0px 2rem;
-}
 
-.image-logo{
-    height: 2.6rem;
-    width: 13rem;
-}
+@media (max-width: 768px) {
+  .hero-section-location {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.hr{
-    margin-top: 5rem;
-    border-width: 1px 0px 0px;
-    border-top-style: solid;
-    border-top-color: rgb(207, 207, 207);
-}
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.footer-para{
-    font-size: 1rem;
-    color: rgb(79, 79, 79);
-    line-height: 1.7rem;
-    margin-top: 2rem;
+  .card-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .collection-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .short-card {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
 }
